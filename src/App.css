@@ -1,0 +1,85 @@
+
+.mainIcon {
+  position: relative;
+  top: 9px;
+  right: -160px;
+}
+
+.fDegrees {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  letter-spacing: -2px;
+  position: relative;
+  top: -30px;
+  right: -100px;
+}
+
+.cDegrees {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  letter-spacing: -2px;
+  position: relative;
+  top: -30px;
+  right: -105px;
+}
+
+.divider {
+  font-size: 20px;
+  position: relative;
+  top: -30px;
+  right: -105px;
+}
+
+#weather-form {
+  width: 800px;
+  position: relative;
+  top: -5px;
+  right: -90px;
+}
+
+.input {
+  border: 1px solid #0d335d;
+}
+
+#locate {
+  position: relative;
+  top: 0px;
+  right: 10px;
+}
+
+button {
+  background-color: #b4cee9;
+  border: 1px solid #93a5cf;
+  color: #1a508b;
+  border-radius: 30px;
+  font-family: "Paytone One", sans-serif;
+  font-size: 13px;
+  padding: 5px 10px;
+  margin: 0 auto;
+  white-space: nowrap;
+  position: relative;
+  top: -1px;
+  right: 100px;
+}
+
+button:hover {
+  background-color: #a5bcd5;
+  color: #ffffff;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.active {
+  color: black;
+  cursor: default;
+  font-weight: bold;
+}
+
+.row {
+  margin: 0 auto;
+}

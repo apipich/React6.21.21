@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import Condition from "./Condition.js";
 
 
 export default function Weather() {
-  const apiKey = "44586293a46c054713f47fc69d4f2a52";
-  let city = "New York";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`
+const [load, setLoad] = useState(false);
+const [temperature, setTemperature] = useState(null);
 
-  return (
+function showResponse(response) {
+setTemperature(Math.round(response.data.main.temp));
+setLoad(true);
+}
+
+if (load) {
+return (
     <div className="Weather">
 <h1>New York</h1>
       <p>Sunday 7:15</p>
@@ -19,7 +24,7 @@ export default function Weather() {
         </div>
         <div className="col-4 d-flex">
           <span className="units">
-            <h2>72</h2>
+            <h2>{temperature}</h2>
             <span className="fDegrees"><a href="/" id="fahrenheit">°F</a></span>
             <span className="divider">|</span>
             <span className="cDegrees"><a href="/" id="celsius">°C</a></span>
@@ -51,11 +56,23 @@ export default function Weather() {
         </form>
 </div>
 </div>
-</div>
-
-    
+</div>  
   )
+} else {
+const apiKey = "44586293a46c054713f47fc69d4f2a52";
+let city = "New York";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`
+axios.get(apiUrl).then(showResponse);
+
+return "Loading...";
+
 }
+}
+
+
+  
+
+  
 
 function RaindropIcon(){
   return ( 

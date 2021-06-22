@@ -3,8 +3,6 @@ import "./styles.css";
 import "./App.css";
 import Forecast from "./Forecast.js";
 import Condition from "./Condition.js";
-import raindrop from "./images/raindrop.png";
-
 
 export default function App() {
   return (
@@ -61,6 +59,6 @@ export default function App() {
 
 function RaindropIcon(){
   return ( 
- <img className="raindropIcon" src={require("./images/raindrop.png")} alt={raindrop} width="30px"/>
+ <img className="raindropIcon" src="/images/raindrop.png" alt="raindrop" width="30px"/>
   );
 }

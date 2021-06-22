@@ -1,10 +1,5 @@
 import React from "react";
 import "./Forecast.css";
-import cloud from "./images/cloud.png";
-import raindrop from "./images/raindrop.png";
-import sun from "./images/sun.png";
-import thunder from "./images/thunder.png";
-
 
 export default function Forecast() {
   return (
@@ -55,24 +50,24 @@ export default function Forecast() {
 
 function CloudIcon(){
   return ( 
-  <img className="cloudIcon" src={require("./images/cloud.png")} alt={cloud} width="30px"/>
+  <img className="cloudIcon" src="./images/cloud.png" alt="cloud" width="30px"/>
   );
   }
 
 function RaindropIcon(){
   return ( 
- <img className="raindropIcon" src={require("./images/raindrop.png")} alt={raindrop} width="30px"/>
+ <img className="raindropIcon" src="./images/raindrop.png" alt="raindrop" width="30px"/>
   );
 }
 
 function ThunderIcon(){
   return ( 
- <img className="thunderIcon" src={require("./images/thunder.png")} alt={thunder} width="30px"/>
+ <img className="thunderIcon" src="./images/thunder.png" alt="thunder" width="30px"/>
   );
 }
 
 function SunIcon(){
   return ( 
- <img className="sunIcon" src={require("./images/sun.png")} alt={sun} width="30px"/>
+ <img className="sunIcon" src="./images/sun.png" alt="sun" width="30px"/>
   );
 }

@@ -1,6 +1,7 @@
 
 import "./styles.css";
 import "./App.css";
+import axios from "axios";
 import Forecast from "./Forecast.js";
 import Condition from "./Condition.js";
 

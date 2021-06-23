@@ -9,6 +9,7 @@ const [allWeather, setAllWeather] = useState({});
 function showResponse(response) {
 setAllWeather({
   city: response.data.name,
+  date: "Sunday 7:15",
   temperature: response.data.main.temp,
   description: response.data.weather[0].description,
   humidity: response.data.main.humidity,
@@ -23,7 +24,7 @@ if (load === true) {
 return (
     <div className="Weather">
 <h1>{allWeather.city}</h1>
-      <p>Sunday 7:15</p>
+      <p>{allWeather.date}</p>
       <div className="row">
         <div className="col-4">
           <span className="mainIcon"><img src={allWeather.icon} alt="Icon"/>

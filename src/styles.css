@@ -53,6 +53,7 @@ h2 {
   font-size: 13px;
   list-style: none;
   line-height: 15px;
+  text-transform: capitalize;
 }
 
 .mainIcon {

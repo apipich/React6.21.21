@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./styles.css";
+import FullDate from "./FullDate.js";
 
 export default function Weather(props) {
 const [load, setLoad] = useState(false);
@@ -9,7 +10,7 @@ const [allWeather, setAllWeather] = useState({});
 function showResponse(response) {
 setAllWeather({
   city: response.data.name,
-  date: "Sunday 7:15",
+  date: new Date(response.data.dt * 1000),
   temperature: response.data.main.temp,
   description: response.data.weather[0].description,
   humidity: response.data.main.humidity,
@@ -24,7 +25,7 @@ if (load === true) {
 return (
     <div className="Weather">
 <h1>{allWeather.city}</h1>
-      <p>{allWeather.date}</p>
+      <p><FullDate date={allWeather.date}/></p>
       <div className="row">
         <div className="col-4">
           <span className="mainIcon"><img src={allWeather.icon} alt="Icon"/>

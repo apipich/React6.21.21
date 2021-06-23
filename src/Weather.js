@@ -43,7 +43,7 @@ return (
     </div>
     <div className="windy">
       <li>
-        Wind: <span className="windspeed" id="wind">{allWeather.wind}</span> mph
+        Wind: <span className="windspeed" id="wind">{Math.round(allWeather.wind)}</span> mph
       </li>
     </div>
     <div className="humidity">

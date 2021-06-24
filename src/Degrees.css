@@ -8,3 +8,32 @@ h2 {
   top: 10px;
   right: -35px;
 }
+
+.fDegrees {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  letter-spacing: -2px;
+  position: relative;
+  top: -30px;
+  right: -100px;
+}
+
+.divider {
+  font-size: 20px;
+  position: relative;
+  top: -30px;
+  right: -105px;
+}
+
+.cDegrees {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  letter-spacing: -2px;
+  position: relative;
+  top: -30px;
+  right: -105px;
+}
+
+a {
+  text-decoration: none;
+}

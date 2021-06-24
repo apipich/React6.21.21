@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./styles.css";
-import FullDate from "./FullDate.js";
+
+import Condition from "./Condition";
 
 export default function Weather(props) {
 const [load, setLoad] = useState(false);
@@ -23,41 +24,8 @@ setLoad(true);
 
 if (load === true) {
 return (
-    <div className="Weather">
-<h1>{allWeather.city}</h1>
-      <p><FullDate date={allWeather.date}/></p>
-      <div className="row">
-        <div className="col-4">
-          <span className="mainIcon"><img src={allWeather.icon} alt="Icon"/>
-          </span>
-        </div>
-        <div className="col-4 d-flex">
-          <span className="units">
-            <h2>{Math.round(allWeather.temperature)}</h2>
-            <span className="fDegrees"><a href="/" id="fahrenheit">°F</a></span>
-            <span className="divider">|</span>
-            <span className="cDegrees"><a href="/" id="celsius">°C</a></span>
-            </span>
-        </div>
-        <div className="col-4">
-  <ul>
-    <div className="weatherNow">
-      <li><span className="condition" id="weatherCondition">{allWeather.description}</span></li>
-    </div>
-    <div className="windy">
-      <li>
-        Wind: <span className="windspeed" id="wind">{Math.round(allWeather.wind)}</span> mph
-      </li>
-    </div>
-    <div className="humidity">
-      <li>Humidity: <span className="humid" id="humidity"></span>{allWeather.humidity}%</li>
-    </div>
-  </ul>
-</div>
-   <br />
-  <br />
-  <br />
-  <br />
+  <div className="totalWeather">
+<Condition data={allWeather}/>
       <div className="form">
         <form id="weather-form">
           <div className="row">
@@ -79,8 +47,8 @@ return (
         </form>
 </div>
 </div>
-</div>  
-  )
+
+);
 } else {
 const apiKey = "44586293a46c054713f47fc69d4f2a52";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.primaryCity}&appid=${apiKey}&units=imperial`

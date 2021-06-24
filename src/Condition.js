@@ -1,11 +1,12 @@
 import React from "react";
 import FullDate from "./FullDate.js";
+import "./Condition.css";
 
 export default function Condition(props) {
 return (
   <div className="Weather">
   <h1>{props.data.city}</h1>
-        <p><FullDate date={props.data.date}/></p>
+        <div className="fullDate"><FullDate date={props.data.date}/></div>
         <div className="row">
           <div className="col-4">
             <span className="mainIcon"><img src={props.data.icon} alt="Icon"/>

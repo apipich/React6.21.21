@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./styles.css";
 import Condition from "./Condition";
+import "./Weather.css";
 
 export default function Weather(props) {
 const [load, setLoad] = useState(false);

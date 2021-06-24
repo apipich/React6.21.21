@@ -46,3 +46,7 @@
   top: -30px;
   right: -105px;
 }
+
+a {
+  text-decoration: none;
+}

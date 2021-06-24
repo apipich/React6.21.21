@@ -1,16 +1,4 @@
 
-
-#weather-form {
-  width: 800px;
-  position: relative;
-  top: -5px;
-  right: -90px;
-}
-
-.input {
-  border: 1px solid #0d335d;
-}
-
 #locate {
   position: relative;
   top: 0px;
@@ -40,16 +28,3 @@ button:hover {
   cursor: pointer;
 }
 
-a {
-  text-decoration: none;
-}
-
-a.active {
-  color: black;
-  cursor: default;
-  font-weight: bold;
-}
-
-.row {
-  margin: 0 auto;
-}

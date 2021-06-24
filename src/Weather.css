@@ -1,0 +1,14 @@
+#weather-form {
+  width: 800px;
+  position: relative;
+  top: -5px;
+  right: -90px;
+}
+
+.input {
+  border: 1px solid #0d335d;
+}
+
+.row {
+  margin: 0 auto;
+}

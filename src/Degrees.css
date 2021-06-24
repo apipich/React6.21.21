@@ -1,0 +1,10 @@
+h2 {
+  color: #1a508b;
+  text-align: right;
+  font-family: "Raleway", sans-serif;
+  font-size: 55px;
+  line-height: 25px;
+  position: relative;
+  top: 10px;
+  right: -35px;
+}

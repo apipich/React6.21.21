@@ -1,6 +1,7 @@
 import React from "react";
 import FullDate from "./FullDate.js";
 import "./Condition.css";
+import Degrees from "./Degrees.js";
 
 export default function Condition(props) {
 return (
@@ -14,7 +15,7 @@ return (
           </div>
           <div className="col-4 d-flex">
             <span className="units">
-              <h2>{Math.round(props.data.temperature)}</h2>
+              <h2><Degrees fahrenheit={props.data.temperature}/></h2>
               <span className="fDegrees"><a href="/" id="fahrenheit">°F</a></span>
               <span className="divider">|</span>
               <span className="cDegrees"><a href="/" id="celsius">°C</a></span>

@@ -6,3 +6,18 @@
   padding: 3px;
   letter-spacing: -1px;
 }
+
+.weatherNow, .windy, .humidity {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1a508b;
+  font-size: 13px;
+  list-style: none;
+  line-height: 15px;
+  text-transform: capitalize;
+}
+
+.mainIcon {
+  position: relative;
+  top: -18px;
+  right: -70px;
+}

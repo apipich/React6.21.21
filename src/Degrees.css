@@ -11,27 +11,27 @@ h2 {
 
 .fDegrees {
   font-family: "Raleway", sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   letter-spacing: -2px;
   position: relative;
-  top: -30px;
-  right: -100px;
+  top: -15px;
+  right: -20px;
 }
 
 .divider {
-  font-size: 20px;
+  font-size: 22px;
   position: relative;
-  top: -30px;
-  right: -105px;
+  top: -15px;
+  right: -25px;
 }
 
 .cDegrees {
   font-family: "Raleway", sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   letter-spacing: -2px;
   position: relative;
-  top: -30px;
-  right: -105px;
+  top: -15px;
+  right: -27px;
 }
 
 a {

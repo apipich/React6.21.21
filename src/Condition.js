@@ -16,9 +16,6 @@ return (
           <div className="col-4 d-flex">
             <span className="units">
               <h2><Degrees fahrenheit={props.data.temperature}/></h2>
-  
-   
-  
               </span>
           </div>
           <div className="col-4">

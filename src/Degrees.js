@@ -13,7 +13,6 @@ function convertFahrenheit(event) {
   setDegrees("fahrenheit");
 }
 
-
 if (degrees === "fahrenheit") {
   return ( 
 <div>
@@ -25,8 +24,6 @@ if (degrees === "fahrenheit") {
 );
 } else {
 let celsius = (props.fahrenheit - 32) * 5/9
-
-
 
 return (
   <div>

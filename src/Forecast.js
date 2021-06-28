@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import "./Forecast.css";
+import DailyWeather from "./DailyWeather.js";
 
 
 export default function Forecast(props) {
@@ -17,13 +18,8 @@ if (loaded) {
 return (
     <div className="Forecast d-flex">
   <div className="col">
-  <div className="weather-forecast-day">{forecast[0].dt}</div>
-  <div className="weather-forecast-condition" id="forecastNumber">Cloudy</div>
-  <div className="icon">icon</div>
-  <div className="weather-forecast-temperature">
-    <div className="weather-forecast-temp">{Math.round(forecast[0].temp.day)}</div>
+<DailyWeather data={forecast[0]}/>
   </div>
-</div>
 </div>
   );
 

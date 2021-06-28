@@ -10,7 +10,7 @@ export default function App() {
 <Weather primaryCity="New York"/>
 <br/>
 <br/>
-<Forecast/>
+<Forecast coordinates={allWeather.coordinates}/>
       <br />
       <br/>
 </div>

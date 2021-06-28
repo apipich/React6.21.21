@@ -12,6 +12,7 @@ const [city, setCity] = useState(props.primaryCity);
 function showResponse(response) {
 setAllWeather({
   city: response.data.name,
+  coordinates: response.data.coord,
   date: new Date(response.data.dt * 1000),
   temperature: response.data.main.temp,
   description: response.data.weather[0].description,

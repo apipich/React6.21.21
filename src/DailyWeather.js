@@ -7,7 +7,7 @@ export default function DailyWeather(props) {
   <div className="weather-forecast-condition" id="forecastNumber">{props.data.weather[0].description}</div>
   <div className="icon">{props.data.weather[0].icon}</div>
   <div className="weather-forecast-temperature">
-    <div className="weather-forecast-temp">{Math.round(props.data.temp.day)}</div>
+    <div className="weather-forecast-temp">{Math.round(props.data.temp.day)}°</div>
 </div>
 </div>
   );

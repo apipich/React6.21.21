@@ -17,12 +17,18 @@ setLoaded(true);
 if (loaded) {
 return (
     <div className="Forecast d-flex">
-  <div className="col">
-<DailyWeather data={forecast[0]}/>
+{forecast.map(function(perDay, index) {
+  if (index < 5) {
+    return (
+ <div className="col" key={index}>
+<DailyWeather data={perDay}/>
   </div>
-</div>
   );
-
+}
+})}
+</div>
+);
+  
 } else {
 let apiKey = "44586293a46c054713f47fc69d4f2a52";
 let longitude = props.coordinates.lon;

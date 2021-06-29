@@ -59,9 +59,6 @@ onChange={changeCity}
             <div className="col-3">
               <input type="submit" id="locate" value="🔍" />
             </div>
-            <div className="col-3">
-              <button id="here">Current Location</button>
-            </div>
           </div>
         </form>
 </div>

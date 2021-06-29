@@ -56,7 +56,7 @@ return (
 onChange={changeCity}
               />
             </div>
-            <div className="col-3">
+            <div className="col-2">
               <input type="submit" id="locate" value="🔍" />
             </div>
           </div>

@@ -27,6 +27,8 @@ return (
 <DailyWeather data={perDay}/>
   </div>
   );
+} else {
+return null;
 }
 })}
 </div>
